@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.craftrunner.ui.app.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.craftrunner.ui.app.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_startFragment2"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.craftrunner.ui.app.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.craftrunner.ui.app.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.craftrunner.ui.app.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_supportFragment"
+            app:destination="@id/supportFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.craftrunner.ui.app.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" >
+        <action
+            android:id="@+id/action_notificationFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="com.example.craftrunner.ui.app.SupportFragment"
+        android:label="fragment_support"
+        tools:layout="@layout/fragment_support" >
+        <action
+            android:id="@+id/action_supportFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/embroideryFragment"
+        android:name="com.example.craftrunner.ui.app.EmbroideryFragment"
+        android:label="fragment_embroidery"
+        tools:layout="@layout/fragment_embroidery" >
+        <action
+            android:id="@+id/action_embroideryFragment_to_threadBlackFragment"
+            app:destination="@id/threadBlackFragment" />
+        <action
+            android:id="@+id/action_embroideryFragment_to_threadBlueFragment"
+            app:destination="@id/threadBlueFragment" />
+        <action
+            android:id="@+id/action_embroideryFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/threadBlackFragment"
+        android:name="com.example.craftrunner.ui.app.ThreadBlackFragment"
+        android:label="fragment_thread_black"
+        tools:layout="@layout/fragment_thread_black" >
+        <action
+            android:id="@+id/action_threadBlackFragment_to_embroideryFragment"
+            app:destination="@id/embroideryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/threadBlueFragment"
+        android:name="com.example.craftrunner.ui.app.ThreadBlueFragment"
+        android:label="fragment_thread_blue"
+        tools:layout="@layout/fragment_thread_blue" >
+        <action
+            android:id="@+id/action_threadBlueFragment_to_embroideryFragment"
+            app:destination="@id/embroideryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.craftrunner.ui.app.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_embroideryFragment"
+            app:destination="@id/embroideryFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_hookCrochetFragment"
+            app:destination="@id/hookCrochetFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_addNewItemFragment"
+            app:destination="@id/addNewItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hookCrochetFragment"
+        android:name="com.example.craftrunner.ui.app.HookCrochetFragment"
+        android:label="fragment_hook_crochet"
+        tools:layout="@layout/fragment_hook_crochet" >
+        <action
+            android:id="@+id/action_hookCrochetFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_hookCrochetFragment_to_hook_fiveFragment"
+            app:destination="@id/hook_fiveFragment" />
+        <action
+            android:id="@+id/action_hookCrochetFragment_to_hook_sixFragment"
+            app:destination="@id/hook_sixFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hook_fiveFragment"
+        android:name="com.example.craftrunner.ui.app.Hook_fiveFragment"
+        android:label="fragment_hook_five"
+        tools:layout="@layout/fragment_hook_five" >
+        <action
+            android:id="@+id/action_hook_fiveFragment_to_hookCrochetFragment"
+            app:destination="@id/hookCrochetFragment" />
+        <action
+            android:id="@+id/action_hook_fiveFragment_to_hookCrochetFragment2"
+            app:destination="@id/hookCrochetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hook_sixFragment"
+        android:name="com.example.craftrunner.ui.app.Hook_sixFragment"
+        android:label="fragment_hook_six"
+        tools:layout="@layout/fragment_hook_six" >
+        <action
+            android:id="@+id/action_hook_sixFragment_to_hookCrochetFragment"
+            app:destination="@id/hookCrochetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewItemFragment"
+        android:name="com.example.craftrunner.ui.app.ItemConfigurationFragment"
+        android:label="fragment_add_new_item"
+        tools:layout="@layout/fragment_item_configuration" >
+        <action
+            android:id="@+id/action_addNewItemFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.app.ProfileFragment">
+
+    <TextView
+        android:id="@+id/textViewSearch2"
+        android:layout_width="135dp"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:text="Search"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewProfile2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewProfile2"
+        android:layout_width="136dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="Profile"
+        android:textColor="#5AD5CD"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSettings2"
+        app:layout_constraintStart_toEndOf="@+id/textViewSearch2" />
+
+    <TextView
+        android:id="@+id/textViewSettings2"
+        android:layout_width="139dp"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:text="Settings"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewProfile2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLoginCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="165dp"
+        android:text="Logins: 0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="179dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="117dp"
+        android:backgroundTint="@color/black"
+        android:text="Reset logins"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoginCount" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Username:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="My Profile"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="237dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/profileuser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textBoxUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="444dp"
+        android:layout_marginEnd="206dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
